@@ -16,6 +16,10 @@ public class APIClient {
     private static final String API_URL = "https://www.kimonolabs.com/api";
     private static GOSFDealsInterface gosfDealsInterface = null;
 
+    /**
+     * Returns a GOSFDealsInterface
+     * @return
+     */
     public static GOSFDealsInterface getApi() {
         if(gosfDealsInterface == null) {
             RestAdapter restAdapter = new RestAdapter.Builder()
